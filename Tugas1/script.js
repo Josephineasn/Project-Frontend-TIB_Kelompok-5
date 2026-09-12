@@ -66,7 +66,7 @@ var daftarBangun = {
         hitung: function(val) {
             var a = val.alas;
             var t = val.tinggi;
-            var c = Math.sqrt((a * a) + (t * t)); // Pythagoras
+            var c = Math.sqrt((a * a) + (t * t));
             return {
                 luas: 0.5 * a * t,
                 keliling: a + t + c,
@@ -221,7 +221,7 @@ btnHitung.addEventListener('click', function() {
         var el = document.getElementById(id);
         var val = parseFloat(el.value);
 
-        // Validasi: tidak boleh kosong, tidak boleh minus, dan tidak boleh 0
+        // tidak boleh kosong, tidak boleh minus, tidak boleh 0
         if (isNaN(val) || val <= 0) {
             alert('Nilai untuk ' + data.inputs[i].label + ' tidak boleh minus atau 0!');
             return;
