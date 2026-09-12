@@ -1,0 +1,202 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgb(240, 238, 238) 10%, #4f54b5 80%);
+    min-height: 100vh;
+    padding: 40px 15px;
+    color: #2c3e50;
+}
+
+.card {
+    background-color: #ffffff;
+    max-width: 460px;
+    margin: 150px auto;
+    padding: 24px 28px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    box-shadow: 6px 12px 14px rgba(129, 149, 214, 0.08);
+}
+
+h2 {
+    text-align: center;
+    color: #1e272e;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.sub-judul {
+    text-align: center;
+    font-size: 13px;
+    color: #718093;
+    margin-bottom: 16px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dcdde1;
+    margin-bottom: 18px;
+}
+
+fieldset {
+    border: 1.5px solid #dcdde1;
+    border-radius: 6px;
+    padding: 16px 18px;
+    background-color: #f8f9fa;
+    margin-bottom: 16px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 13px;
+    color: #2f3640;
+    padding: 0 6px;
+}
+
+fieldset p {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2f3640;
+    margin-bottom: 4px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced6e0;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #2f3640;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #0984e3;
+}
+
+.tombol-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: #0984e3;
+    color: #ffffff;
+    border-color: #076bbb;
+    flex: 2;
+}
+
+.btn-primary:hover {
+    background-color: #076bbb;
+}
+
+.btn-secondary {
+    background-color: #dfe6e9;
+    color: #2f3640;
+    border-color: #b2bec3;
+    flex: 1;
+}
+
+.btn-secondary:hover {
+    background-color: #b2bec3;
+}
+
+#kotakHasil {
+    background-color: #eafaf1;
+    border: 1.5px solid #a3e4d7;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 15px;
+}
+
+.output-hasil {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #196f3d;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #a3e4d7;
+}
+
+.hasil-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.hasil-card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #d4efdf;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.hasil-judul {
+    display: block;
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-bottom: 2px;
+}
+
+.hasil-angka {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.hasil-satuan {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    font-size: 13px;
+    border: 1px solid #dcdde1;
+}
+
+th {
+    background-color: #f1f2f6;
+    color: #2f3640;
+    text-align: left;
+    padding: 8px 10px;
+}
+
+td {
+    padding: 8px 10px;
+    color: #2f3640;
+    border-top: 1px solid #f1f2f6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #a0aec0;
+}

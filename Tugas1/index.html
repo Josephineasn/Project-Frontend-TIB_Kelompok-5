@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Bangun Datar</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    
-    <script src="script.js"></script>
+
+<div class="card">
+        <h2>Kalkulator Bangun Datar</h2>
+        <p class="sub-judul">Hitung Luas dan Keliling Bangun Datar 2D</p>
+        <hr />
+
+        <form id="formGeometri">
+            <fieldset>
+                <legend>Pilih Bangun Datar</legend>
+
+                <p>
+                    <label for="jenisBangunDatar">Jenis Bangun Datar:</label><br />
+                    <select id="jenisBangunDatar">
+                        <option value="persegi">Persegi / Bujur Sangkar</option>
+                        <option value="persegiPanjang">Persegi Panjang</option>
+                        <option value="jajaranGenjang">Jajaran Genjang</option>
+                        <option value="segitigaSiku">Segitiga Siku-Siku</option>
+                        <option value="segitigaSamaKaki">Segitiga Sama Kaki</option>
+                        <option value="segitigaSamaSisi">Segitiga Sama Sisi</option>
+                        <option value="belahKetupat">Belah Ketupat</option>
+                        <option value="trapesium">Trapesium Sama Kaki</option>
+                        <option value="lingkaran">Lingkaran</option>
+                        <option value="layangLayang">Layang-Layang</option>
+                    </select>
+                </p>
+
+                <div id="inputAngka"></div>
+
+                <div class="tombol-area">
+                    <button type="button" id="btnHitung" class="btn-primary">Hitung</button>
+                    <button type="button" id="btnReset" class="btn-secondary">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <div id="jawaban" style="display: none;">
+            <div class="output-hasil">
+                <span id="namaBangunDatar">-</span>
+            </div>
+
+            <div class="hasil-container">
+                <div class="hasil-card">
+                    <span class="hasil-judul">Luas (L)</span>
+                    <span class="hasil-angka" id="outputLuas">0</span>
+                    <span class="hasil-satuan">cm&sup2;</span>
+                </div>
+                <div class="hasil-card">
+                    <span class="hasil-judul">Keliling (K)</span>
+                    <span class="hasil-angka" id="outputKeliling">0</span>
+                    <span class="hasil-satuan">cm</span>
+                </div>
+            </div>
+
+            <table border="1" cellpadding="6" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th scope="col">Perhitungan</th>
+                        <th scope="col">Rumus & Langkah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Luas</b></td>
+                        <td id="outputRumusLuas">-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Keliling</b></td>
+                        <td id="outputRumusKeliling">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</div>
+<footer>
+        <p>&copy; 2026 Kelompok 5 TI-B Frontend Programming</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
